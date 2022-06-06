@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/index.css" />
+
+    <title>Unit Converter</title>
+  </head>
+  <body>
+    <main>
+      <h1 id="heading">Metric/Imperial unit conversion</h1>
+      <div id="number_container">
+        <input
+          type="number"
+          id="number"
+          value="0"
+          min="0"
+          placeholder="Enter a number"
+        />
+        <button id="convert-btn" onclick="convert()">CONVERT</button>
+      </div>
+    </main>
+
+    <div id="conversion-results">
+      <h3 id="results-conversion-headers">Length (Meter/Feet)</h3>
+      <p id="results-conversion-text-length"></p>
+    </div>
+    <div id="conversion-results">
+      <h3 id="results-conversion-headers">Volume (Liters/Gallons)</h3>
+      <p id="results-conversion-text-volume"></p>
+    </div>
+    <div id="conversion-results">
+      <h3 id="results-conversion-headers">Mass (Kilograms/Pounds)</h3>
+      <p id="results-conversion-text-mass"></p>
+    </div>
+    <h4>Made by Tim DeHof</h4>
+    <script src="/index.js"></script>
+  </body>
+</html>
